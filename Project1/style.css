@@ -1,0 +1,186 @@
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        purple,
+        red
+    );
+    gap: 20px;
+    background-size: 400% 400%;
+    animation: gradient 7s ease-in infinite;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right,blue,red);
+    animation: animate 5s linear infinite;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 40px;
+    background: linear-gradient(135deg,black,blue,white);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: blue;
+    text-shadow: 2px 2px 3px red;
+    background-size: 500% 500%;
+
+    animation: gradient 7s ease-in infinite,
+               animate 5s linear infinite;
+}
+
+p {
+    margin: auto;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: hsl(0, 60%, 8%);
+}
+
+input {
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.boxx {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 450px;
+    background: linear-gradient(
+        135deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        purple,
+        red
+    );
+    border-radius: 12px;
+    background-size: 400% 400%;
+    animation: animate 5s linear infinite,
+               gradient 2.5s ease-in infinite;
+    transition: 0.7s;
+}
+
+.box:hover {
+    transform: scale(1.06) rotate(5deg);
+    background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        purple,
+        red
+    );
+    background-size: 400% 400%;
+    animation: animate 5s linear infinite,
+               gradient 2.5s ease-in-out infinite;
+}
+
+img {
+    margin: auto;
+    height: 270px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animate {
+    0%{
+    box-shadow:
+    0 0 20px red,
+    0 0 50px red;
+    }
+
+    20%{
+    box-shadow:
+    0 0 20px orange,
+    0 0 50px orange;
+    }
+
+    40%{
+    box-shadow:
+    0 0 20px lime,
+    0 0 50px lime;
+    }
+
+    60%{
+    box-shadow:
+    0 0 20px cyan,
+    0 0 50px cyan;
+    }
+
+    80%{
+    box-shadow:
+    0 0 20px blue,
+    0 0 50px blue;
+    }
+
+    100%{
+    box-shadow:
+    0 0 20px red,
+    0 0 50px red;
+    }
+}
