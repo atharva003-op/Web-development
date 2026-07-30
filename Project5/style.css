@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: linear-gradient(to right,black,blue,red,whitesmoke);
+    background-size: 500% 500%;
+    padding: 0 40px;
+    animation: gradient 7s ease infinite;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bolder;
+    color: lightseagreen;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    color: green;
+    transition: 0.7s;
+}
+
+a:hover {
+    border-bottom: 3px solid lime;
+    color: lightgreen;
+}
+
+li {
+    transition: 0.5s;
+}
+
+li:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 80px;
+}
+
+.box {
+    display: flex;
+    height: 450px;
+    width: 650px;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        pink,
+        lightpink,
+        blueviolet,
+        whitesmoke
+    );
+    background-size: 500% 500%;
+    animation: gradient 4s ease-in-out infinite,
+               rainbow 5s linear infinite;
+    transition: 0.8s;
+}
+
+.box:hover {
+    transform: scale(1.02) translateY(-10px);
+    filter: contrast(2) brightness(1.7);
+}
+
+img {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    border-radius: 17px;
+}
+
+.btn-class {
+    margin-top: 20px;
+    display: flex;
+    justify-self: center;
+    gap: 30px;
+}
+
+button {
+    padding: 20px 35px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(45deg, red,pink,whitesmoke,blue,black);
+    background-size: 500% 500%;
+    color: black;
+    cursor: pointer;
+    animation: gradient 3s ease-out infinite;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        box-shadow: 0 0 20px red,
+                    0 0 40px red,
+                    0 0 60px red;
+    }
+    20% {
+        box-shadow: 0 0 20px orange,
+                    0 0 40px orange,
+                    0 0 60px orange;
+    }
+    40% {
+        box-shadow: 0 0 20px lime,
+                    0 0 40px lime,
+                    0 0 60px lime;
+    }
+    60% {
+        box-shadow: 0 0 20px cyan,
+                    0 0 40px cyan,
+                    0 0 60px cyan;
+    }
+    80% {
+        box-shadow: 0 0 20px blue,
+                    0 0 40px blue,
+                    0 0 60px blue;
+    }
+    100% {
+        box-shadow: 0 0 20px red,
+                    0 0 40px red,
+                    0 0 60px red;
+    }
+}
