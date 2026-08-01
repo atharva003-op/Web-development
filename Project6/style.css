@@ -1,0 +1,160 @@
+body {
+    background-color: blueviolet;
+    font-family: monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-bottom: 70px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.lists {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+.box1 {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    margin: auto;
+    animation: animation 5s ease infinite,
+               scale 3s ease-in infinite;
+}
+
+.box2 {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    margin: auto;
+    animation: animation 5s ease infinite;
+}
+
+.box3 {
+    height: 200px;
+    width: 200px;
+    background-color: azure;
+    margin: auto;
+    border-radius: 50%;
+    animation: rainbow 4s linear infinite,
+               shadow 3.5s ease-in infinite;
+    
+}
+
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animation1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% { 
+        transform: scale(1.05);
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: lime;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 20px aqua,
+                    0 0 40px aqua,
+                    0 0 60px aqua;
+    }
+    20% {
+        box-shadow: 0 0 20px lightskyblue,
+                    0 0 40px lightskyblue,
+                    0 0 60px lightskyblue;
+    }
+    40% {
+        box-shadow: 0 0 20px blue,
+                    0 0 40px blue,
+                    0 0 60px blue;
+    }
+    60% {
+        box-shadow: 0 0 20px greenyellow,
+                    0 0 40px greenyellow,
+                    0 0 60px greenyellow;
+    }
+    80% {
+        box-shadow: 0 0 20px green,
+                    0 0 40px green,
+                    0 0 60px green;
+    }
+    100% {
+        box-shadow: 0 0 20px aqua,
+                    0 0 40px aqua,
+                    0 0 60px aqua;
+    }
+}
