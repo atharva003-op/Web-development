@@ -1,0 +1,82 @@
+body {
+    background-color: aliceblue;
+    font-family: monospace;
+    transition: background-color 0.5s;
+}
+
+.body1 {
+    background-color: darkblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+    background-color: whitesmoke;
+    border-bottom: 5px solid red;
+    transition: 0.5s;
+}
+
+.navbar1 {
+    background-color: black;
+    color: whitesmoke;
+    border-bottom: 5px solid darkblue;
+}
+
+.logo {
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.link {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    padding: 3px 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.button {
+    background-color: whitesmoke;
+    color: black;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+.text {
+    text-align: center;
+    margin: 100px;
+    transition: 0.5s;
+}
+
+.text1 {
+    color: whitesmoke;
+}
