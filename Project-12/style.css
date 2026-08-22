@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to right,
+        darkblue,
+        blue,
+        cyan
+    );
+
+    background-size: 130%;
+
+    height: 80px;
+    padding: 0 45px;
+    position: relative;
+    /* border-bottom: 5px solid crimson; */
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: linear-gradient(
+        to right,
+        black,
+        blue,
+        cyan,
+        whitesmoke
+    );
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+
+    filter: blur(1px);
+    background-size: 300%;
+    animation: glow 5s linear infinite;
+}
+
+.navbar:hover::after {
+    width: 100%;
+}
+
+.shape {
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+    background-image: conic-gradient(
+        red,
+        orange,
+        yellow,
+        greenyellow,
+        lime,
+        cyan,
+        blue,
+        darkblue,
+        red
+    );
+
+    border: 3px solid ;
+    animation: animate 5s linear infinite;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    color: aqua;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    width: 0;
+    background: linear-gradient(to right,red,blue,cyan);
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    color: darkblue;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 0;
+    }
+    25% {
+        border-radius: 50%;
+        transform: rotate(360deg);
+    }
+    50% {
+        border-radius: 50%;
+    }
+    75% {
+        border-radius: 50%;
+        transform: rotate(-360deg);
+    }
+    100% {
+        border-radius: 0;
+    }
+}
+
+@keyframes glow {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 300%;
+    }
+}
