@@ -1,0 +1,94 @@
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: linear-gradient(
+        to right,
+        black,
+        darkblue,
+        blue
+    );
+    background-size: 200% 200%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    filter: brightness(2);
+    animation: border 5s linear infinite;
+}
+
+@keyframes border {
+    0% {
+        border-bottom: 5px solid red;
+    }
+    25% {
+        border-bottom: 5px solid orange;
+    }
+    50% {
+        border-bottom: 5px solid yellowgreen;
+    }
+    75% {
+        border-bottom: 5px solid blue;
+    }
+    100% {
+        border-bottom: 5px solid red;
+    }
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bolder;
+    animation: logo 5s linear infinite;
+}
+
+@keyframes logo {
+    0% {
+        color: blue;
+        text-shadow: 2px 2px 3px darkblue;
+    }
+    20% {
+        color: aqua;
+        text-shadow: 2px 2px 3px darkcyan;
+    }
+    40% {
+        color: red;
+        text-shadow: 2px 2px 3px darkred;
+    }
+    60% {
+        color: lime;
+        text-shadow: 2px 2px 3px darkseagreen;
+    }
+    80% {
+        color: purple;
+        text-shadow: 2px 2px 3px darkviolet;
+    }
+    100% {
+        color: navy;
+        text-shadow: 2px 2px 3px blueviolet;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: lime;
+}
