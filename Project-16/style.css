@@ -28,7 +28,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    filter: brightness(2);
+    /* filter: brightness(2); */
     animation: border 5s linear infinite;
 }
 
