@@ -1,6 +1,13 @@
 body {
-    background-color: aliceblue;
+    background: linear-gradient(
+        135deg,
+        #9191ee,
+        #87f28b
+    );
+    background-size: 200% 200%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 * {
@@ -9,10 +16,32 @@ body {
 }
 
 .container {
-    width: 500px;
+    margin-top: 50px;
+    width: 400px;
     border:  5px solid black;
     border-radius: 15px;
     overflow: hidden;
+    background-color: hsl(20, 0%, 40%);
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    text-align: center;
+}
+
+input {
+    background-color: hsl(0, 0%, 25%);
+    border: none;
+    width: 85%;
+    margin-top: 20px;
+    height: 70px;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 25px;
 }
 
 .btns {
@@ -23,14 +52,34 @@ body {
 }
 
 button {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50px;
     border: none;
-    background-color: blueviolet;
+    background-color: darkgrey;
     color: whitesmoke;
     font-size: 25px;
     font-weight: bolder;
     cursor: pointer;
+    transition: 0.5s; 
 }
 
+button:hover {
+    background-color: grey;
+}
+
+button:active {
+    background-color: blue;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.operator:hover {
+    background-color: rgb(255, 132, 0);
+}
+
+.operator:active {
+    background-color: rgb(255, 192, 75);
+}
