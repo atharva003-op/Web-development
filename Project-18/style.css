@@ -1,0 +1,135 @@
+body {
+    background: url(images/img1.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 100px;
+    background-color: rgba(0, 0, 200, 80%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 15px;
+    background: linear-gradient(
+        180deg,
+        red,
+        orange
+    );
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.navbar:hover::after {
+    height: 100%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: crosshair;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    height: 35px;
+    width: 200px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+}
+
+.searchbtn {
+    border: none;
+    height: 35px;
+    width: 60px;
+    border-radius: 0 5px 5px 0;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: lightgreen;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.searchbtn:hover {
+    background-color: greenyellow;
+}
+
+.searchbtn:active {
+    background-color: lightgreen;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+li:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: chartreuse;
+    position: relative;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: chartreuse;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: linear-gradient(
+        to right,
+        darkred,
+        red,
+        orangered,
+        orange
+    );
+    border-radius: 2px;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
